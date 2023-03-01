@@ -1,0 +1,50 @@
+.users {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  padding: 19px 64px 25px 34px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.usersTitle {
+  display: block;
+  margin-bottom: 17px;
+  font-weight: 700;
+}
+
+.user {
+  position: relative;
+  padding: 10px;
+  width: 420px;
+  height: 73px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+}
+
+.characteristic {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #a3a3a3;
+}
+
+.characteristic span {
+  color: #000000;
+}
+
+.characteristic:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.userDetail {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4b51ef;
+  text-decoration: none;
+}

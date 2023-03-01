@@ -4,11 +4,11 @@ import styles from './Sort.module.scss';
 const Sort = () => {
   return (
     <section className={styles.sortSection}>
-    <span>Сортировка</span>
-    <button type="button" className={styles.sortCity}>
+    <span className={styles.sortTitle}>Сортировка</span>
+    <button type="button" className={styles.sortButton}>
       по городу
     </button>
-    <button type="button" className={styles.sortCompany}>
+    <button type="button" className={styles.sortButton}>
       по компании
     </button>
   </section>

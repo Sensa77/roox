@@ -34,7 +34,8 @@ const Users = () => {
   return (
     <section className={styles.users}>
       <span className={styles.usersTitle}>Список пользователей</span>
-        {users ? users.map((user) => {
+        {users.length === 0 ? <div className={styles.ldsSpinner}><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : 
+        users.map((user) => {
           return (
             <div className={styles.user} key={user.id}>
               <p className={styles.characteristic}>
@@ -51,7 +52,7 @@ const Users = () => {
               </a>
             </div>
           );
-        }): null}
+        })}
         <p className={styles.usersLength}>Найдено {users.length} пользователей</p>
     </section>
   );
